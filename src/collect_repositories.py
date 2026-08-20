@@ -1,9 +1,11 @@
 import json
+import os
 import sys
 
 from github_client import run_query
 
 SEARCH_QUERY = "stars:>1 sort:stars-desc"
+OUTPUT_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "repositorios_lab01_s01.json")
 
 REPOSITORIES_QUERY = """
 query ($searchQuery: String!, $first: Int!, $after: String) {
@@ -78,5 +80,9 @@ def fetch_top_repositories(count, page_size=10):
 if __name__ == "__main__":
     count = int(sys.argv[1]) if len(sys.argv) > 1 else 100
     repos = fetch_top_repositories(count)
-    print(f"{len(repos)} repositorios retornados")
-    print(json.dumps(repos[0], indent=2, ensure_ascii=False))
+
+    os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
+    with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
+        json.dump(repos, f, indent=2, ensure_ascii=False)
+
+    print(f"{len(repos)} repositorios salvos em {OUTPUT_PATH}")

@@ -1,11 +1,14 @@
 import os
 import sys
+import time
 from typing import Optional
 
 import requests
 from dotenv import load_dotenv
 
 GITHUB_GRAPHQL_URL = "https://api.github.com/graphql"
+RETRYABLE_STATUS_CODES = {502, 503, 504}
+MAX_RETRIES = 4
 
 load_dotenv()
 
@@ -18,13 +21,20 @@ def run_query(query: str, variables: Optional[dict] = None) -> dict:
             "preencha com seu token pessoal do GitHub."
         )
 
-    response = requests.post(
-        GITHUB_GRAPHQL_URL,
-        json={"query": query, "variables": variables or {}},
-        headers={"Authorization": f"Bearer {token}"},
-        timeout=30,
-    )
-    response.raise_for_status()
+    for attempt in range(MAX_RETRIES + 1):
+        response = requests.post(
+            GITHUB_GRAPHQL_URL,
+            json={"query": query, "variables": variables or {}},
+            headers={"Authorization": f"Bearer {token}"},
+            timeout=30,
+        )
+
+        if response.status_code in RETRYABLE_STATUS_CODES and attempt < MAX_RETRIES:
+            time.sleep(2**attempt)
+            continue
+
+        response.raise_for_status()
+        break
 
     payload = response.json()
     if "errors" in payload:

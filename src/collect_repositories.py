@@ -1,3 +1,4 @@
+import csv
 import json
 import os
 import sys
@@ -5,7 +6,11 @@ import sys
 from github_client import run_query
 
 SEARCH_QUERY = "stars:>1 sort:stars-desc"
-OUTPUT_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "repositorios_lab01_s01.json")
+DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "data")
+OUTPUT_PATHS = {
+    "json": os.path.join(DATA_DIR, "repositorios_lab01_s01.json"),
+    "csv": os.path.join(DATA_DIR, "repositorios_lab01_s02.csv"),
+}
 
 REPOSITORIES_QUERY = """
 query ($searchQuery: String!, $first: Int!, $after: String) {
@@ -77,12 +82,30 @@ def fetch_top_repositories(count, page_size=10):
     return repos
 
 
-if __name__ == "__main__":
-    count = int(sys.argv[1]) if len(sys.argv) > 1 else 100
-    repos = fetch_top_repositories(count)
-
-    os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
-    with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
+def save_json(repos, path):
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, "w", encoding="utf-8") as f:
         json.dump(repos, f, indent=2, ensure_ascii=False)
 
-    print(f"{len(repos)} repositorios salvos em {OUTPUT_PATH}")
+
+def save_csv(repos, path):
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, "w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=list(repos[0].keys()))
+        writer.writeheader()
+        writer.writerows(repos)
+
+
+if __name__ == "__main__":
+    count = int(sys.argv[1]) if len(sys.argv) > 1 else 100
+    fmt = sys.argv[2] if len(sys.argv) > 2 else "json"
+
+    repos = fetch_top_repositories(count)
+    path = OUTPUT_PATHS[fmt]
+
+    if fmt == "csv":
+        save_csv(repos, path)
+    else:
+        save_json(repos, path)
+
+    print(f"{len(repos)} repositorios salvos em {path}")

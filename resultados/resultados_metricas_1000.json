@@ -1,0 +1,81 @@
+{
+  "total_repositorios": 1000,
+  "RQ03_releases": {
+    "mediana": 39,
+    "media": 126.86,
+    "min": 0,
+    "max": null,
+    "sem_release_percentual": 28.5
+  },
+  "RQ04_atualizacao": {
+    "mediana_dias": 1,
+    "media_dias": 113.66,
+    "min_dias": 0,
+    "max_dias": null
+  },
+  "RQ05_linguagem": {
+    "distribuicao_top10": [
+      { "linguagem": "Python", "quantidade": 227 },
+      { "linguagem": "TypeScript", "quantidade": 173 },
+      { "linguagem": "JavaScript", "quantidade": 111 },
+      { "linguagem": "Nao informado", "quantidade": 87 },
+      { "linguagem": "Go", "quantidade": 77 },
+      { "linguagem": "Rust", "quantidade": 58 },
+      { "linguagem": "C++", "quantidade": 41 },
+      { "linguagem": "Java", "quantidade": 41 },
+      { "linguagem": "Jupyter Notebook", "quantidade": 24 },
+      { "linguagem": "C", "quantidade": 21 }
+    ]
+  },
+  "RQ06_issues_fechadas": {
+    "mediana_percentual": 87.5,
+    "media_percentual": 80.2
+  },
+  "RQ07_por_linguagem": {
+    "Python": { "quantidade_repos": 227, "mediana_prs_aceitas": 560, "mediana_releases": 20, "mediana_dias_sem_update": 2 },
+    "TypeScript": { "quantidade_repos": 173, "mediana_prs_aceitas": 1979, "mediana_releases": 133, "mediana_dias_sem_update": 0 },
+    "JavaScript": { "quantidade_repos": 111, "mediana_prs_aceitas": 617, "mediana_releases": 37, "mediana_dias_sem_update": 5 },
+    "Nao informado": { "quantidade_repos": 87, "mediana_prs_aceitas": 129, "mediana_releases": 0, "mediana_dias_sem_update": 178 },
+    "Go": { "quantidade_repos": 77, "mediana_prs_aceitas": 1958, "mediana_releases": 142, "mediana_dias_sem_update": 0 },
+    "Rust": { "quantidade_repos": 58, "mediana_prs_aceitas": 2353.5, "mediana_releases": 96, "mediana_dias_sem_update": 0 },
+    "C++": { "quantidade_repos": 41, "mediana_prs_aceitas": 1159, "mediana_releases": 46, "mediana_dias_sem_update": 0 },
+    "Java": { "quantidade_repos": 41, "mediana_prs_aceitas": 945, "mediana_releases": 55, "mediana_dias_sem_update": 2 },
+    "Jupyter Notebook": { "quantidade_repos": 24, "mediana_prs_aceitas": 78, "mediana_releases": 0, "mediana_dias_sem_update": 23 },
+    "C": { "quantidade_repos": 21, "mediana_prs_aceitas": 294, "mediana_releases": 46, "mediana_dias_sem_update": 0 },
+    "Shell": { "quantidade_repos": 20, "mediana_prs_aceitas": 389.5, "mediana_releases": 9.5, "mediana_dias_sem_update": 14.5 },
+    "Ruby": { "quantidade_repos": 13, "mediana_prs_aceitas": 6269, "mediana_releases": 28, "mediana_dias_sem_update": 2 },
+    "HTML": { "quantidade_repos": 11, "mediana_prs_aceitas": 232, "mediana_releases": 0, "mediana_dias_sem_update": 32 },
+    "Swift": { "quantidade_repos": 10, "mediana_prs_aceitas": 704.5, "mediana_releases": 38.5, "mediana_dias_sem_update": 2.5 },
+    "Kotlin": { "quantidade_repos": 9, "mediana_prs_aceitas": 258, "mediana_releases": 75, "mediana_dias_sem_update": 0 },
+    "C#": { "quantidade_repos": 8, "mediana_prs_aceitas": 3117, "mediana_releases": 126.5, "mediana_dias_sem_update": 0 },
+    "CSS": { "quantidade_repos": 8, "mediana_prs_aceitas": 185.5, "mediana_releases": 0, "mediana_dias_sem_update": 356 },
+    "Vue": { "quantidade_repos": 6, "mediana_prs_aceitas": 402, "mediana_releases": 40.5, "mediana_dias_sem_update": 281.5 },
+    "Dart": { "quantidade_repos": 6, "mediana_prs_aceitas": 592, "mediana_releases": 35, "mediana_dias_sem_update": 2.5 },
+    "Markdown": { "quantidade_repos": 5, "mediana_prs_aceitas": 244, "mediana_releases": 0, "mediana_dias_sem_update": 9 },
+    "Clojure": { "quantidade_repos": 4, "mediana_prs_aceitas": 5168, "mediana_releases": 119, "mediana_dias_sem_update": 0 },
+    "MDX": { "quantidade_repos": 4, "mediana_prs_aceitas": 380, "mediana_releases": 1, "mediana_dias_sem_update": 6.5 },
+    "PHP": { "quantidade_repos": 4, "mediana_prs_aceitas": 10652, "mediana_releases": 577.5, "mediana_dias_sem_update": 0 },
+    "Zig": { "quantidade_repos": 3, "mediana_prs_aceitas": 4501, "mediana_releases": 20, "mediana_dias_sem_update": 0 },
+    "Vim Script": { "quantidade_repos": 3, "mediana_prs_aceitas": 440, "mediana_releases": 8, "mediana_dias_sem_update": 0 },
+    "Scala": { "quantidade_repos": 2, "mediana_prs_aceitas": 5, "mediana_releases": 0, "mediana_dias_sem_update": 173 },
+    "TeX": { "quantidade_repos": 2, "mediana_prs_aceitas": 19, "mediana_releases": 3.5, "mediana_dias_sem_update": 2070 },
+    "Dockerfile": { "quantidade_repos": 2, "mediana_prs_aceitas": 383.5, "mediana_releases": 0.5, "mediana_dias_sem_update": 404.5 },
+    "Astro": { "quantidade_repos": 2, "mediana_prs_aceitas": 1266, "mediana_releases": 25.5, "mediana_dias_sem_update": 0 },
+    "Haskell": { "quantidade_repos": 2, "mediana_prs_aceitas": 1074, "mediana_releases": 94, "mediana_dias_sem_update": 8 },
+    "PowerShell": { "quantidade_repos": 2, "mediana_prs_aceitas": 800.5, "mediana_releases": 41.5, "mediana_dias_sem_update": 2.5 },
+    "Makefile": { "quantidade_repos": 2, "mediana_prs_aceitas": 3010.5, "mediana_releases": 169.5, "mediana_dias_sem_update": 57 },
+    "Batchfile": { "quantidade_repos": 1, "mediana_prs_aceitas": 7, "mediana_releases": 31, "mediana_dias_sem_update": 47 },
+    "Roff": { "quantidade_repos": 1, "mediana_prs_aceitas": 1, "mediana_releases": 0, "mediana_dias_sem_update": 306 },
+    "Assembly": { "quantidade_repos": 1, "mediana_prs_aceitas": 0, "mediana_releases": 0, "mediana_dias_sem_update": 36 },
+    "Nunjucks": { "quantidade_repos": 1, "mediana_prs_aceitas": 485, "mediana_releases": 0, "mediana_dias_sem_update": 65 },
+    "V": { "quantidade_repos": 1, "mediana_prs_aceitas": 13799, "mediana_releases": 304, "mediana_dias_sem_update": 0 },
+    "Elixir": { "quantidade_repos": 1, "mediana_prs_aceitas": 898, "mediana_releases": 12, "mediana_dias_sem_update": 66 },
+    "Lua": { "quantidade_repos": 1, "mediana_prs_aceitas": 6532, "mediana_releases": 147, "mediana_dias_sem_update": 4 },
+    "Objective-C": { "quantidade_repos": 1, "mediana_prs_aceitas": 710, "mediana_releases": 40, "mediana_dias_sem_update": 1311 },
+    "Blade": { "quantidade_repos": 1, "mediana_prs_aceitas": 1710, "mediana_releases": 227, "mediana_dias_sem_update": 2 },
+    "Julia": { "quantidade_repos": 1, "mediana_prs_aceitas": 27812, "mediana_releases": 203, "mediana_dias_sem_update": 0 },
+    "LLVM": { "quantidade_repos": 1, "mediana_prs_aceitas": 97404, "mediana_releases": 159, "mediana_dias_sem_update": 0 },
+    "Svelte": { "quantidade_repos": 1, "mediana_prs_aceitas": 252, "mediana_releases": 0, "mediana_dias_sem_update": 136 }
+  },
+  "observacao": "min/max de RQ03 e RQ04 nao foram recalculados aqui (null); rode 'python src/analyze_metrics.py data/repositorios_lab01_s02.csv' para obter o JSON completo e oficial com todos os campos."
+}

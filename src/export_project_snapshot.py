@@ -6,7 +6,9 @@ from github_client import run_query
 
 PROJECT_OWNER = "PedroL10"
 PROJECT_NUMBER = 1
-OUTPUT_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "snapshot_lab01_s02.csv")
+DEFAULT_OUTPUT_PATH = os.path.join(
+    os.path.dirname(__file__), "..", "data", "snapshot_lab01_s02.csv"
+)
 
 PROJECT_ITEMS_QUERY = """
 query ($login: String!, $number: Int!, $after: String) {
@@ -103,8 +105,9 @@ def save_csv(items, path):
 
 if __name__ == "__main__":
     items = fetch_project_items()
-    save_csv(items, OUTPUT_PATH)
-    print(f"{len(items)} itens do Project salvos em {OUTPUT_PATH}")
+    output_path = sys.argv[1] if len(sys.argv) > 1 else DEFAULT_OUTPUT_PATH
+    save_csv(items, output_path)
+    print(f"{len(items)} itens do Project salvos em {output_path}")
 
     drafts = [i for i in items if i["is_draft_issue"]]
     if drafts:

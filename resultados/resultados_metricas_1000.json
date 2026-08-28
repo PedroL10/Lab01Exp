@@ -1,11 +1,18 @@
 {
   "total_repositorios": 1000,
+  "analysis_reference_at": "2026-08-24T00:00:00Z",
+  "qualidade_dados": {
+    "duplicados": 0,
+    "linguagem_primaria_nao_informada": 87,
+    "repositorios_sem_issues": 43,
+    "issues_fechadas_maior_que_total": 0
+  },
   "RQ01_idade": {
-    "mediana_dias": 2829.5,
-    "media_dias": 2800.42,
+    "mediana_dias": 2829.0,
+    "media_dias": 2799.95,
     "mediana_anos": 7.8,
-    "min_dias": 11,
-    "max_dias": 6709
+    "min_dias": 10,
+    "max_dias": 6708
   },
   "RQ02_prs_aceitas": {
     "mediana": 768.0,
@@ -21,10 +28,10 @@
     "sem_release_percentual": 28.5
   },
   "RQ04_atualizacao": {
-    "mediana_dias": 5.0,
-    "media_dias": 117.01,
+    "mediana_dias": 4.0,
+    "media_dias": 116.66,
     "min_dias": 3,
-    "max_dias": 2456
+    "max_dias": 2455
   },
   "RQ05_linguagem": {
     "distribuicao_top10": [
@@ -97,13 +104,13 @@
       "quantidade_repos": 173,
       "mediana_prs_aceitas": 1979,
       "mediana_releases": 133,
-      "mediana_dias_sem_update": 4
+      "mediana_dias_sem_update": 3
     },
     "JavaScript": {
       "quantidade_repos": 111,
       "mediana_prs_aceitas": 617,
       "mediana_releases": 37,
-      "mediana_dias_sem_update": 9
+      "mediana_dias_sem_update": 8
     },
     "Nao informado": {
       "quantidade_repos": 87,
@@ -121,7 +128,7 @@
       "quantidade_repos": 58,
       "mediana_prs_aceitas": 2353.5,
       "mediana_releases": 96.0,
-      "mediana_dias_sem_update": 3.5
+      "mediana_dias_sem_update": 3.0
     },
     "C++": {
       "quantidade_repos": 41,
@@ -157,7 +164,7 @@
       "quantidade_repos": 13,
       "mediana_prs_aceitas": 6269,
       "mediana_releases": 28,
-      "mediana_dias_sem_update": 6
+      "mediana_dias_sem_update": 5
     },
     "HTML": {
       "quantidade_repos": 11,
@@ -169,187 +176,26 @@
       "quantidade_repos": 10,
       "mediana_prs_aceitas": 704.5,
       "mediana_releases": 38.5,
-      "mediana_dias_sem_update": 6.5
-    },
-    "Kotlin": {
-      "quantidade_repos": 9,
-      "mediana_prs_aceitas": 258,
-      "mediana_releases": 75,
-      "mediana_dias_sem_update": 4
-    },
-    "C#": {
-      "quantidade_repos": 8,
-      "mediana_prs_aceitas": 3117.0,
-      "mediana_releases": 126.5,
-      "mediana_dias_sem_update": 3.5
-    },
-    "CSS": {
-      "quantidade_repos": 8,
-      "mediana_prs_aceitas": 185.5,
-      "mediana_releases": 0.0,
-      "mediana_dias_sem_update": 359.0
-    },
-    "Dart": {
-      "quantidade_repos": 6,
-      "mediana_prs_aceitas": 592.0,
-      "mediana_releases": 35.0,
-      "mediana_dias_sem_update": 6.5
-    },
-    "Vue": {
-      "quantidade_repos": 6,
-      "mediana_prs_aceitas": 402.0,
-      "mediana_releases": 40.5,
-      "mediana_dias_sem_update": 284.5
-    },
-    "Markdown": {
-      "quantidade_repos": 5,
-      "mediana_prs_aceitas": 244,
-      "mediana_releases": 0,
-      "mediana_dias_sem_update": 12
-    },
-    "MDX": {
-      "quantidade_repos": 4,
-      "mediana_prs_aceitas": 380.0,
-      "mediana_releases": 1.0,
-      "mediana_dias_sem_update": 10.0
-    },
-    "Clojure": {
-      "quantidade_repos": 4,
-      "mediana_prs_aceitas": 5168.0,
-      "mediana_releases": 119.0,
-      "mediana_dias_sem_update": 3.0
-    },
-    "PHP": {
-      "quantidade_repos": 4,
-      "mediana_prs_aceitas": 10652.0,
-      "mediana_releases": 577.5,
-      "mediana_dias_sem_update": 3.0
-    },
-    "Vim Script": {
-      "quantidade_repos": 3,
-      "mediana_prs_aceitas": 440,
-      "mediana_releases": 8,
-      "mediana_dias_sem_update": 3
-    },
-    "Zig": {
-      "quantidade_repos": 3,
-      "mediana_prs_aceitas": 4501,
-      "mediana_releases": 20,
-      "mediana_dias_sem_update": 3
-    },
-    "Dockerfile": {
-      "quantidade_repos": 2,
-      "mediana_prs_aceitas": 383.5,
-      "mediana_releases": 0.5,
-      "mediana_dias_sem_update": 408.5
-    },
-    "Scala": {
-      "quantidade_repos": 2,
-      "mediana_prs_aceitas": 5.0,
-      "mediana_releases": 0.0,
-      "mediana_dias_sem_update": 176.0
-    },
-    "PowerShell": {
-      "quantidade_repos": 2,
-      "mediana_prs_aceitas": 800.5,
-      "mediana_releases": 41.5,
       "mediana_dias_sem_update": 5.5
-    },
-    "Makefile": {
-      "quantidade_repos": 2,
-      "mediana_prs_aceitas": 3010.5,
-      "mediana_releases": 169.5,
-      "mediana_dias_sem_update": 60.0
-    },
-    "Haskell": {
-      "quantidade_repos": 2,
-      "mediana_prs_aceitas": 1074.0,
-      "mediana_releases": 94.0,
-      "mediana_dias_sem_update": 11.5
-    },
-    "Astro": {
-      "quantidade_repos": 2,
-      "mediana_prs_aceitas": 1266.0,
-      "mediana_releases": 25.5,
-      "mediana_dias_sem_update": 3.5
-    },
-    "TeX": {
-      "quantidade_repos": 2,
-      "mediana_prs_aceitas": 19.0,
-      "mediana_releases": 3.5,
-      "mediana_dias_sem_update": 2074.0
-    },
-    "Batchfile": {
-      "quantidade_repos": 1,
-      "mediana_prs_aceitas": 7,
-      "mediana_releases": 31,
-      "mediana_dias_sem_update": 50
-    },
-    "Blade": {
-      "quantidade_repos": 1,
-      "mediana_prs_aceitas": 1710,
-      "mediana_releases": 227,
-      "mediana_dias_sem_update": 5
-    },
-    "Roff": {
-      "quantidade_repos": 1,
-      "mediana_prs_aceitas": 1,
+    }
+  },
+  "RQ08_sem_linguagem": {
+    "definicao_grupo_sem_linguagem": "primaryLanguage nulo na resposta GraphQL; nao implica ausencia de codigo",
+    "sem_linguagem": {
+      "quantidade_repos": 87,
+      "mediana_prs_aceitas": 129,
       "mediana_releases": 0,
-      "mediana_dias_sem_update": 309
+      "mediana_dias_sem_update": 181,
+      "mediana_percentual_issues_fechadas": 77.7,
+      "repositorios_sem_issues": 15
     },
-    "Assembly": {
-      "quantidade_repos": 1,
-      "mediana_prs_aceitas": 0,
-      "mediana_releases": 0,
-      "mediana_dias_sem_update": 40
-    },
-    "Nunjucks": {
-      "quantidade_repos": 1,
-      "mediana_prs_aceitas": 485,
-      "mediana_releases": 0,
-      "mediana_dias_sem_update": 68
-    },
-    "Julia": {
-      "quantidade_repos": 1,
-      "mediana_prs_aceitas": 27812,
-      "mediana_releases": 203,
-      "mediana_dias_sem_update": 3
-    },
-    "Lua": {
-      "quantidade_repos": 1,
-      "mediana_prs_aceitas": 6532,
-      "mediana_releases": 147,
-      "mediana_dias_sem_update": 7
-    },
-    "Svelte": {
-      "quantidade_repos": 1,
-      "mediana_prs_aceitas": 252,
-      "mediana_releases": 0,
-      "mediana_dias_sem_update": 140
-    },
-    "LLVM": {
-      "quantidade_repos": 1,
-      "mediana_prs_aceitas": 97404,
-      "mediana_releases": 159,
-      "mediana_dias_sem_update": 3
-    },
-    "V": {
-      "quantidade_repos": 1,
-      "mediana_prs_aceitas": 13799,
-      "mediana_releases": 304,
-      "mediana_dias_sem_update": 3
-    },
-    "Elixir": {
-      "quantidade_repos": 1,
-      "mediana_prs_aceitas": 898,
-      "mediana_releases": 12,
-      "mediana_dias_sem_update": 69
-    },
-    "Objective-C": {
-      "quantidade_repos": 1,
-      "mediana_prs_aceitas": 710,
-      "mediana_releases": 40,
-      "mediana_dias_sem_update": 1314
+    "com_linguagem": {
+      "quantidade_repos": 913,
+      "mediana_prs_aceitas": 929,
+      "mediana_releases": 51,
+      "mediana_dias_sem_update": 4,
+      "mediana_percentual_issues_fechadas": 88.1,
+      "repositorios_sem_issues": 28
     }
   }
 }
